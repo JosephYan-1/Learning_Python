@@ -40,7 +40,9 @@ def get_filename(path):
         index_dir += 1 
     return path[index_dir:index_ext]
 
-def write_to_file(filename, exists)
+def write_to_file(filename, exists):
+    return
+
 filepath = input("give me filepath: ")
 
 #do stuff with the filepath
