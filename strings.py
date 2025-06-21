@@ -67,14 +67,16 @@ filepath = input("give me filepath: ")
 print(f"Directory: ",check_for_dir(filepath))
 print(f"Extension: ",get_ext(filepath))
 print("File name: ", get_filename(filepath))
-5
-# going to write to a file 
-# os is being used to check if the file exists or not.
 
-writable_file = "./test.txt" #itll be within the working the dir
-check_exists(writable_file)
+
 # ran_paths = strings_var.ran_paths # if we do not use use __ from file.py we have to do var.___
 # TD_ran_path = strings_var.TD_ran_paths
+
+# going to write to a file 
+# os is being used to check if the file exists or not.
+writable_file = "./test.txt" #itll be within the working the dir
+check_exists(writable_file)
+
 with open(writable_file, "w") as file: # do not want to continuely increase file size
     file.write("USING 1D List\n")
     for i in range(len(ran_paths)):
