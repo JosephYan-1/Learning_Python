@@ -93,22 +93,19 @@ def playing(word):
 
 def main():
     print("LOADING HANGMAN")
-    line_breaker = "===================="
     choice = input("READY TO PLAY? y/n: ").lower()
     while choice not in ("y", "n"):
         choice = input("MUST BE y/n: ").lower()
 
-    print(line_breaker)
     while (choice == "y"):
         word = get_word()
         WL , displayString = playing(word)
-        print(f"\n{line_breaker}")
         if WL == 0 :
             print("YOU LOSE")
         else: 
             print("YOU WON")
-        print(line_breaker)
-        print(f"You guessed: {displayString}\nThe word was: {word}")
+
+        print(f"You guessed: {displayString}, the word was {word}")
         
         
         choice = input("PLAY AGAIN? y/n: ").lower()
